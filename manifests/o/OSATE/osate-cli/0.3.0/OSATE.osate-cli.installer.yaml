@@ -1,0 +1,36 @@
+# Created using wingetcreate 1.12.13.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
+PackageIdentifier: OSATE.osate-cli
+PackageVersion: 0.3.0
+InstallerType: wix
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+InstallerSwitches:
+  InstallLocation: INSTALLFOLDER="<INSTALLPATH>"
+UpgradeBehavior: install
+Commands:
+- osate-cli
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\osate-cli'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/osate/aadl-tooling/releases/download/osate-cli-v0.3.0/osate-cli-0.3.0-windows-x64.msi
+  InstallerSha256: 8559B33F8BA09FB7B51617073CE15E9C18D31B1F5CDB20EA7446D62421754E9E
+  ProductCode: '{650238B5-0C32-4D08-BE69-083F89CDCE83}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{650238B5-0C32-4D08-BE69-083F89CDCE83}'
+    UpgradeCode: '{ECA9F49D-D2CD-4B39-9F83-90D11533219A}'
+- Architecture: arm64
+  InstallerUrl: https://github.com/osate/aadl-tooling/releases/download/osate-cli-v0.3.0/osate-cli-0.3.0-windows-arm64.msi
+  InstallerSha256: F689E7B8FDDEF9DE7FB669CAAAADC9581C8B243015DC1050593792107B6C719F
+  ProductCode: '{1F7A3878-14B3-49B0-8B52-CAFA56DDE2C5}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{1F7A3878-14B3-49B0-8B52-CAFA56DDE2C5}'
+    UpgradeCode: '{ECA9F49D-D2CD-4B39-9F83-90D11533219A}'
+ManifestType: installer
+ManifestVersion: 1.10.0
+ReleaseDate: 2026-09-30

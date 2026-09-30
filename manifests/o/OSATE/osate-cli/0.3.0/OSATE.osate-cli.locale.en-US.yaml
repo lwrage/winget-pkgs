@@ -1,0 +1,27 @@
+# Created using wingetcreate 1.12.13.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+
+PackageIdentifier: OSATE.osate-cli
+PackageVersion: 0.3.0
+PackageLocale: en-US
+Publisher: CMU/SEI
+PublisherUrl: https://www.sei.cmu.edu/
+PackageName: osate-cli
+PackageUrl: https://github.com/osate/aadl-tooling
+License: BSD (SEI)-style
+LicenseUrl: https://github.com/osate/aadl-tooling/blob/HEAD/osate-cli/LICENSE.txt
+Copyright: Copyright 2026 Carnegie Mellon University
+ShortDescription: OSATE command-line interface for AADL workspaces
+Moniker: osate-cli
+Tags:
+- aadl
+- architecture
+- cli
+- model-based-engineering
+- osate
+ReleaseNotesUrl: https://github.com/osate/aadl-tooling/releases/tag/osate-cli-v0.3.0
+Documentations:
+- DocumentLabel: User guide
+  DocumentUrl: https://github.com/osate/aadl-tooling/blob/HEAD/osate-cli/OSATE-CLI.md
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0
